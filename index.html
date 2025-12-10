@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>カナリア - 1000円カット専門店</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* アナログ感を出すためのカスタムスタイル */
+        @import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap');
+        
+        /* 適切なシステムフォントがない場合は、明朝体に近いフォントを優先 */
+        .font-analog {
+            font-family: 'Shippori Mincho', 'Hiragino Mincho ProN', 'serif';
+        }
+        
+        .box-shadow-analog {
+            /* わずかに揺らぐ手書き風の影を表現 */
+            box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.6);
+        }
+        
+        /* 区切り線を手書き風にする */
+        .divider {
+            height: 2px;
+            background: repeating-linear-gradient(90deg, #333, #333 4px, transparent 4px, transparent 8px);
+            opacity: 0.8;
+            margin: 1.5rem 0;
+        }
+
+        /* 画面全体の背景をわずかに紙っぽい色に */
+        body {
+            background-color: #f7f3f0; /* Soft off-white/beige */
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'canary-pink': '#ffe8f0', // 画像のピンクより少し淡く
+                        'canary-accent': '#e91e63', // アクセントカラー
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-analog text-gray-800 antialiased leading-relaxed p-4 sm:p-8">
+
+    <div class="max-w-4xl mx-auto bg-white p-6 sm:p-10 border-4 border-gray-900 rounded-lg box-shadow-analog">
+        
+        <header class="text-center mb-10">
+            <div class="w-32 h-32 sm:w-40 sm:h-40 bg-canary-pink border-4 border-gray-900 mx-auto mb-4 rounded-full flex items-center justify-center overflow-hidden">
+                <img src="https://iili.io/fRXLmH7.png" alt="カナリア ロゴマーク" class="w-full h-full object-cover rounded-full" onerror="this.onerror=null;this.src='https://placehold.co/160x160/ffe8f0/666?text=MARK';" />
+            </div>
+            
+            <h1 class="text-6xl sm:text-7xl font-bold tracking-widest text-gray-900 mb-2">
+                カナリア
+            </h1>
+            <p class="text-xl sm:text-2xl tracking-wider text-canary-accent font-bold">
+                カット専門店
+            </p>
+        </header>
+
+        <section class="mb-10 p-6 sm:p-8 bg-canary-pink rounded-lg border-2 border-dashed border-gray-500">
+            <h2 class="text-5xl sm:text-6xl font-bold text-center mb-6 text-gray-900">
+                1000<small class="text-3xl font-normal">円</small> カット
+            </h2>
+            
+            <div class="text-center space-y-2">
+                <p class="text-lg sm:text-xl font-bold">
+                    京阪石山線 <span class="text-2xl sm:text-3xl text-canary-accent">滋賀里駅</span> 近く
+                </p>
+                <p class="text-base sm:text-lg">
+                    ファミリーマート大津砂高店 敷地内にて営業中
+                </p>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="mb-10 text-center">
+            <h3 class="text-3xl sm:text-4xl font-bold mb-4 text-gray-900">
+                営業時間
+            </h3>
+            <p class="text-4xl sm:text-5xl font-bold text-canary-accent tracking-wider">
+                AM 10:00 〜
+            </p>
+            <p class="text-xl sm:text-2xl mt-4 font-bold">
+                <span class="bg-yellow-200 px-2 py-1 rounded-md">木曜・金曜・土曜・日曜</span>
+            </p>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="mb-10 grid md:grid-cols-2 gap-8">
+            <div class="p-4 border border-gray-400 rounded-md">
+                <h3 class="text-2xl font-bold mb-3 border-b border-gray-400 pb-2">
+                    サービスの特徴
+                </h3>
+                <ul class="list-none space-y-3 text-lg">
+                    <li class="flex items-start">
+                        <span class="text-canary-accent mr-2 text-2xl">•</span> 
+                        <span class="flex-1">
+                            <strong class="font-extrabold text-canary-accent">約15分</strong> で完了のスピードカット
+                        </span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-canary-accent mr-2 text-2xl">•</span> 
+                        <span class="flex-1">
+                            シャンプー・ドライヤーなし
+                        </span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-canary-accent mr-2 text-2xl">•</span> 
+                        <span class="flex-1">
+                            カット後、毛くずを吸引機で吸い取って終了です
+                        </span>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-canary-accent mr-2 text-2xl">•</span> 
+                        <span class="flex-1 text-green-700 font-bold">
+                            車椅子でのご来店もOK！
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="p-4 border border-gray-400 rounded-md bg-canary-pink/50">
+                <h3 class="text-2xl font-bold mb-3 border-b border-gray-400 pb-2">
+                    カット例 (一例)
+                </h3>
+                <p class="text-lg leading-loose">
+                    ツーブロック、刈り上げ、スポーツ刈り、ソフトモヒカン、丸刈り、マッシュ、ショート、フェード、ボブ
+                </p>
+            </div>
+        </section>
+        
+        <div class="divider"></div>
+
+        <footer class="text-center mt-10">
+            <p class="text-xl sm:text-2xl font-bold mb-4">
+                ご来店お待ちしております
+            </p>
+             <p class="text-sm text-gray-600">
+                ※当店は予約制ではございません。
+            </p>
+           
+
+            <div class="mt-6">
+                <p class="text-l font-bold mb-1">
+                    お問い合わせ
+                </p>
+                <p class="text-lg font-bold text-gray-700 underline decoration-canary-accent">
+                    <a href="mailto:info@canary-cut1000.com">canary@gmail.com</a>
+                </p>
+                <p class="text-sm text-gray-600 mt-1">
+                    (※カットのご予約はできません)
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+</html>
